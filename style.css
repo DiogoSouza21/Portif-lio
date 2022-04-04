@@ -1,0 +1,13 @@
+@charset "UTF-8";
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'sans-serif';
+}
+
+p {
+    color: aquamarine;
+}
