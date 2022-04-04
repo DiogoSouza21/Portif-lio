@@ -12,6 +12,19 @@ p {
     color: aquamarine;
 }
 
+#Sumário {
+    font-size: 15px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+.capa {
+    width: 250px;
+    height: auto;
+}
+
 figure {
     border: thin #c0c0c0 solid;
     display: flex;
