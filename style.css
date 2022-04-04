@@ -11,3 +11,24 @@ body{
 p {
     color: aquamarine;
 }
+
+figure {
+    border: thin #c0c0c0 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 250px; /*Tamanho da borda*/
+    margin: auto; /*Centraliza a imagem*/
+}
+
+img {
+
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    font: italic smaller;
+    padding: 3px;
+    text-align: center;
+}
