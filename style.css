@@ -12,30 +12,18 @@ p {
     color: aquamarine;
 }
 
-#Sumário {
-    font-size: 15px;
-}
-
-.logo {
-    width: 50px;
-    height: auto;
-}
-.capa {
-    width: 250px;
-    height: auto;
-}
-
 figure {
     border: thin #c0c0c0 solid;
     display: flex;
-    flex-flow: column;
+    flex-flow: wrap-reverse;
     padding: 5px;
     max-width: 250px; /*Tamanho da borda*/
     margin: auto; /*Centraliza a imagem*/
-}
-
-img {
-
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    
 }
 
 figcaption {
@@ -45,3 +33,25 @@ figcaption {
     padding: 3px;
     text-align: center;
 }
+
+#Sumário {
+    font-size: 15px;
+}
+
+#legendaDaCapa {
+    border-radius: 5%;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+.capa {
+    width: 250px;
+    height: auto;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
