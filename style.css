@@ -4,11 +4,12 @@
   border: 0;
   margin: 0;
   font-family: 'Inknut Antiqua', 'Macondo', sans-serif;
-  /* scroll-behavior: smooth; */
+  line-height: 25px;
 }
 
 body {
   font-family: 'sans-serif';
+  scroll-behavior: smooth;
 }
 
 /* ------------------------------ */
@@ -18,20 +19,20 @@ header {
   flex-direction: column;
   align-items: center;
   gap: 10px;
-  background: linear-gradient(to right, rgb(168, 92, 249), rgb(85, 52, 165), rgb(75, 123, 229));
+  background: linear-gradient(to top, rgb(168, 92, 249), rgb(85, 52, 165), rgb(75, 123, 229));
   background-size: 400% 400%;
   animation: animate-background 10s infinite ease-in-out;
 }
 
 @keyframes animate-background {
   0% {
-    background-position: 0 50%;
+    background-position: 50% 0;
   }
   50% {
-    background-position: 100% 50%;
+    background-position: 50% 100%;
   }
   100% {
-    background-position: 0 50%;
+    background-position: 50% 0;
   }
 }
 
@@ -45,8 +46,8 @@ header {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  flex-wrap: wrap;  
-  padding-bottom: 100px;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
 }
 
 #Sumário > button > a {
@@ -92,7 +93,8 @@ header {
 /* ------------------------------ */
 /* -------Main 1ª Section-------- */
 main {
-  background-color: #4B7BE5;
+  /* background-color: #4B7BE5; */
+  background: linear-gradient(to top, rgb(111, 223, 223), rgb(75, 123, 229), rgb(85, 52, 165));
 }
 
 #primeiraSection {
@@ -106,10 +108,25 @@ main {
   padding-bottom: 10px;
 }
 
+#sobreMim > p {
+  /* line-height: 25px; */
+}
+
 #projetos {
   width: 100%;
 }
 
+#projetos > hr {
+  border: 1px;
+  width: 100%;
+  margin: 5px auto;
+}
+
+#seperaSection {
+  width: 80%;
+  border: 1px solid rgb(85, 52, 165);
+  margin: 0 auto;
+}
 /* ------------------------------ */
 /* -------Main 2ª Section-------- */
 #segundaSection {
@@ -119,11 +136,11 @@ main {
 }
 
 #habilidades {
-  width: 25%;
+  width: 30%;
 }
 
 #curiosidades {
-  width: 25%;
+  width: 30%;
 }
 
 /* ------------------------------ */
@@ -131,10 +148,14 @@ main {
 footer {
   display: flex;
   justify-content: center;
+  align-items: center;
+  height: 100px;
+  background: linear-gradient(to top, rgb(75, 123, 229), rgb(111, 223, 223));
   background-color: #6FDFDF;
 }
 
 .logo {
   width: 50px;
   height: auto;
+  padding: 5px;
 }
